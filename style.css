@@ -119,9 +119,8 @@ h1 {
 
 .tremble:hover {
   cursor: pointer;
-  animation: tremble 200ms 5 forwards;
-  animation: name duration timing-function delay iteration-count direction
-    fill-mode;
+  animation: tremble 200ms infinite forwards;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 .cookieOpen p {
