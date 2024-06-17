@@ -96,6 +96,7 @@ h1 {
   background-color: var(--colorButton);
   width: 174rem;
   padding: 16rem;
+  cursor: pointer;
 
   font-family: "DM Sans";
   font-style: normal;
@@ -108,5 +109,42 @@ h1 {
   border: none;
   border-radius: 4rem;
   margin-top: 42rem;
+}
 
+.cookieOpen button:hover {
+  background-color: #ffa220;
+}
+
+/* animmcao */
+
+.tremble:hover {
+  cursor: pointer;
+  animation: tremble 200ms 5 forwards;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+
+.cookieOpen p {
+  animation: appear 1.5s ease-out forwards;
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotate(4deg);
+  }
+  25% {
+    transform: translateX(4rem);
+  }
+  50% {
+    transform: translateX(-4rem);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes appear {
+  0%{
+    transform: translateY(140rem) scale(0.1);
+  }
 }
