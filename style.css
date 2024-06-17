@@ -3,3 +3,89 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-size: 6.25%;
+
+  --colorBaseText: #34355b;
+  --colorBlack: #000;
+  --colorWhite: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: no-repeat linear-gradient(45deg, #190361, #bb00ff);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.cookieClose,
+.cookieOpen {
+  margin-bottom: 80rem;
+  width: 428rem;
+  height: 424rem;
+  padding: 44rem 64rem 64rem;
+  border-radius: 5rem;
+  background: var(--colorWhite);
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 28rem;
+  color: var(--colorBaseText);
+}
+
+.cookieClose section,
+.cookieOpen section {
+  display: flex;
+  flex-direction: column;
+  gap: 18rem;
+  text-align: center;
+  width: 300rem;
+  height: 312rem;
+  padding: 0 20rem;
+}
+
+.cookieClose p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14rem;
+  line-height: 20rem;
+
+  color: var(--colorBaseText);
+}
+
+.cookieOpen {
+  width: 428rem;
+  height: 564rem;
+  padding: 48rem 64rem;
+}
+
+.cookieOpen section {
+  width: 300rem;
+  height: 468rrem;
+}
+
+.cookieOpen p {
+  display: block;
+  
+  background-color: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 28rem;
+
+  color: #000000;
+}
